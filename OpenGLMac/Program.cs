@@ -33,7 +33,7 @@ namespace OpenGLTest
 			program["modelview_matrix"].SetValue(Matrix4.CreateTranslation(new Vector3(2, 2, -10)) * Matrix4.CreateRotation(new Vector3(1, -1, 0), 0.2f));
 
 			// create a cube
-			cube = OpenGL.Constructs.Geometry.CreateCube(program, new Vector3(-1, -1, -1), new Vector3(1, 1, 1));
+			cube = OpenGL.Geometry.CreateCube(program, new Vector3(-1, -1, -1), new Vector3(1, 1, 1));
 
 			Glut.glutMainLoop ();
 		}
